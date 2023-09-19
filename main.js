@@ -33,12 +33,12 @@ function generateChart() {
     const info = {
         labels: data.map((chart) => chart.day ),
         datasets: [
-        {
-        data: data.map((chart) => chart.amount),
-        backgroundColor: "hsl(10, 79%, 65%)",
-        borderRadius: 3,
-        hoverBackgroundColor: "hsl(186, 34%, 60%)"
-        }
+            {
+                data: data.map((chart) => chart.amount),
+                backgroundColor: ["hsl(10, 79%, 65%)"],
+                borderRadius: 5,
+                hoverBackgroundColor: data.map(() => "hsl(10, 79%, 75%)"),
+            },
         ],
     }
     const titleTooltip = (e) => `$${e[0].formattedValue}`;
