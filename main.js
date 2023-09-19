@@ -36,7 +36,7 @@ function generateChart() {
             {
                 data: data.map((chart) => chart.amount),
                 backgroundColor: ["hsl(10, 79%, 65%)"],
-                borderRadius: 5,
+                borderRadius: 3,
                 hoverBackgroundColor: "hsl(10, 79%, 75%)",
             },
         ],
