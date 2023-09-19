@@ -31,16 +31,16 @@ const data = [
 
 function generateChart() {
     const info = {
-        labels: data.map((chart) => chart.day),
+        labels: data.map((chart) => chart.day ),
         datasets: [
-            {
-                data: data.map((chart) => chart.amount),
-                backgroundColor: ["hsl(10, 79%, 65%)"],
-                borderRadius: 3,
-                hoverBackgroundColor: "hsl(186, 34%, 60%)"
-            },
+        {
+        data: data.map((chart) => chart.amount),
+        backgroundColor: "hsl(10, 79%, 65%)",
+        borderRadius: 3,
+        hoverBackgroundColor: "hsl(186, 34%, 60%)"
+        }
         ],
-    };
+    }
     const titleTooltip = (e) => `$${e[0].formattedValue}`;
     const labelTooltip = (e) => "";
     const options = {
